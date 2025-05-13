@@ -1,0 +1,485 @@
+/* Reset básico y fuentes */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+    scroll-behavior: smooth;
+}
+
+/* Tipografía actual - Importada desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap');
+
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: #2c3e50;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px 0; /* Ajuste para padding general del container */
+}
+
+/* Cabecera */
+header {
+    background: linear-gradient(135deg, #3498db, #8e44ad);
+    color: white;
+    padding: 50px 20px; /* Ajustado ligeramente */
+    text-align: center;
+    border-bottom-left-radius: 40px; /* Suavizado */
+    border-bottom-right-radius: 40px; /* Suavizado */
+}
+
+header h1 {
+    font-size: 2.8em;
+    margin-bottom: 10px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+header .tagline {
+    font-size: 1.2em;
+    opacity: 0.9;
+    margin-top: 0;
+}
+
+/* Estilos para la Barra de Navegación */
+.main-nav {
+    background-color: #34495e;
+    padding: 12px 0; /* Un poco más de padding */
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky; /* Hace que la barra se quede arriba al hacer scroll */
+    top: 0;
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+}
+
+.main-nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.05em;
+    padding: 10px 15px; /* Padding ajustado */
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.main-nav a:hover, 
+.main-nav a.active { /* Estilo para la página activa */
+    background-color: #4e667f;
+    color: #e0e0e0;
+}
+
+/* Sección Principal - Resumen de la Propuesta (Landing Page) */
+#propuesta-resumen {
+    padding: 50px 20px; /* Más padding vertical */
+    background-color: #ffffff;
+    margin: 30px auto;
+    border-radius: 12px; /* Bordes más redondeados */
+    box-shadow: 0 6px 18px rgba(0,0,0,0.09);
+    text-align: center;
+}
+
+#propuesta-resumen h2 {
+    font-size: 2.2em; /* Título un poco más grande */
+    margin-bottom: 25px;
+}
+
+#propuesta-resumen p {
+    font-size: 1.1em;
+    max-width: 800px;
+    margin: 0 auto 30px auto; /* Más margen inferior */
+    color: #555;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #e74c3c;
+    color: white;
+    padding: 14px 30px; /* Botón más grande */
+    text-decoration: none;
+    border-radius: 30px; /* Botón más redondeado */
+    font-weight: bold;
+    font-size: 1.15em;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 10px rgba(231, 76, 60, 0.4); /* Sombra de color */
+}
+
+.cta-button:hover {
+    background-color: #c0392b;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(192, 57, 43, 0.5);
+}
+
+/* Sección Vista Previa de Módulos (Landing Page) */
+#modulos-preview {
+    padding: 50px 0;
+    text-align: center;
+}
+#modulos-preview h2 {
+    font-size: 2.2em;
+    margin-bottom: 35px;
+}
+.module-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px; /* Espacio entre tarjetas */
+}
+.module-card {
+    background-color: #fff;
+    padding: 30px; /* Más padding interno */
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.09);
+    width: calc(33.333% - 35px); /* Ajuste para el gap */
+    min-width: 290px;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex; /* Para mejor alineación interna si hay elementos de diferente altura */
+    flex-direction: column;
+    justify-content: space-between; /* Para que el enlace quede abajo */
+}
+.module-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+.module-card h3 {
+    margin-top: 0;
+    color: #3498db;
+    font-size: 1.6em;
+}
+.module-card p {
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 20px;
+    flex-grow: 1; /* Para que el párrafo ocupe el espacio disponible */
+}
+.module-link {
+    display: inline-block;
+    color: #8e44ad;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 0; /* Para que el área clickeable sea mayor */
+}
+.module-link:hover {
+    text-decoration: underline;
+    color: #702b8a;
+}
+
+
+/* Estilos para Páginas de Módulos Específicos */
+.module-page-content {
+    background-color: #ffffff;
+    padding: 35px;
+    margin: 30px auto;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.09);
+    text-align: left;
+}
+
+.module-page-content h2 { /* Título principal de la página del módulo */
+    text-align: center;
+    font-size: 2.2em;
+    margin-bottom: 30px;
+    color: #3498db;
+}
+
+.module-page-content h3 { /* Subtítulos dentro del módulo */
+    font-size: 1.7em;
+    color: #8e44ad;
+    margin-top: 35px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ecf0f1;
+    padding-bottom: 8px;
+}
+.module-page-content p, .module-page-content li {
+    font-size: 1.05em;
+    color: #444;
+}
+
+.resource-list, .reflection-questions {
+    margin-left: 20px;
+    margin-bottom: 25px;
+    padding-left: 15px;
+}
+.resource-list li, .reflection-questions li {
+    margin-bottom: 12px;
+}
+.resource-list strong {
+    color: #2c3e50;
+}
+
+.infographic-placeholder {
+    border: 2px dashed #bdc3c7;
+    padding: 25px;
+    text-align: center;
+    margin: 25px 0;
+    background-color: #f8f9f9;
+    border-radius: 8px;
+}
+.infographic-placeholder ol {
+    text-align:left;
+    display:inline-block;
+    font-size: 1em;
+}
+
+
+/* Trivia / Cuestionario */
+.quiz-container {
+    background-color: #fdfdfd; /* Un blanco ligeramente diferente */
+    padding: 25px;
+    border-radius: 10px;
+    margin-top: 30px;
+    border: 1px solid #ecf0f1;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.07);
+}
+.quiz-container h4 { /* Título de la trivia */
+    text-align: center;
+    font-size: 1.6em;
+    margin-bottom: 20px;
+    color: #2980b9;
+}
+.quiz-question {
+    margin-bottom: 25px;
+}
+.quiz-question p:first-child { /* El párrafo de la pregunta */
+    font-weight: 600; /* Un poco más de peso */
+    margin-bottom: 12px;
+    font-size: 1.1em;
+}
+.quiz-options {
+    list-style: none;
+    padding: 0;
+}
+.quiz-options li {
+    margin-bottom: 10px;
+    padding: 12px 15px; /* Más padding */
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s, border-color 0.2s;
+}
+.quiz-options li:hover {
+    background-color: #eef5f9;
+    border-color: #3498db;
+}
+.quiz-options input[type="radio"] {
+    margin-right: 10px;
+    transform: scale(1.1); /* Radio button un poco más grande */
+}
+.quiz-feedback {
+    margin-top: 12px;
+    font-style: italic;
+    font-weight: 500;
+    padding: 5px 0;
+}
+.submit-quiz-btn {
+    display: block;
+    margin: 25px auto 0 auto;
+    padding: 12px 25px;
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: background-color 0.3s, transform 0.2s;
+}
+.submit-quiz-btn:hover {
+    background-color: #27ae60;
+    transform: translateY(-2px);
+}
+#quiz-results {
+    margin-top:25px;
+    font-weight:bold;
+    text-align: center;
+    font-size: 1.2em;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Manifiesto */
+.manifesto-box {
+    background-color: #e8f4fd;
+    border-left: 6px solid #3498db;
+    padding: 25px;
+    margin: 30px 0;
+    border-radius: 8px;
+}
+.manifesto-box ul {
+    padding-left: 20px;
+}
+.manifesto-box li {
+    margin-bottom: 8px;
+}
+
+/* Navegación entre Módulos (botones Anterior/Siguiente) */
+.module-navigation {
+    margin-top: 45px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-button {
+    display: inline-block;
+    background-color: #3498db;
+    color: white;
+    padding: 12px 22px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-size: 1em;
+}
+.nav-button.prev {
+    background-color: #95a5a6;
+}
+.nav-button.prev:hover {
+    background-color: #7f8c8d;
+    transform: translateX(-2px);
+}
+.nav-button.next:hover {
+    background-color: #2980b9;
+    transform: translateX(2px);
+}
+
+
+/* Sección de Referencias (compartida o específica) */
+#referencias-landing,
+#referencias-propuesta {
+    padding: 50px 20px;
+    background-color: #34495e;
+    color: #ecf0f1; /* Color de texto general para la sección de referencias */
+    margin-top: 50px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+}
+#referencias-landing h2, #referencias-propuesta h2 {
+    text-align: center;
+    color: #fff;
+    font-size: 2em;
+    margin-bottom: 25px;
+}
+.references-list { /* Estilo general para listas de referencias */
+    list-style: none;
+    padding: 0;
+    max-width: 850px;
+    margin: 0 auto;
+}
+.references-list li {
+    margin-bottom: 12px;
+    font-size: 0.95em; /* Texto de la referencia un poco más pequeño */
+    line-height: 1.5;
+}
+/* MODIFICACIÓN PARA MEJORAR CONTRASTE DE ENLACES EN REFERENCIAS */
+.references-list li a {
+    color: #85c1e9; /* Un azul más brillante y claro para mayor contraste sobre fondo oscuro */
+    text-decoration: underline; /* Subrayado por defecto para que siempre se identifique como enlace */
+    font-weight: 500; /* Un poco más de peso para distinguirlo del texto normal */
+    word-break: break-all; /* Para URLs largas */
+}
+.references-list li a:hover {
+    color: #a9d6f5; /* Aún más claro en hover */
+    text-decoration: underline;
+}
+/* FIN DE MODIFICACIÓN PARA REFERENCIAS */
+
+/* Footer Básico */
+footer {
+    text-align: center;
+    padding: 25px;
+    background-color: #2c3e50;
+    color: #bdc3c7;
+    font-size: 0.9em;
+    margin-top:0; /* Asegurarse que no haya margen superior si es el último elemento */
+}
+
+/* Diseño Responsive */
+@media (max-width: 992px) {
+    .module-card {
+        width: calc(50% - 30px); /* 2 columnas */
+    }
+     header h1 {
+        font-size: 2.4em;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+    header h1 {
+        font-size: 2em;
+    }
+    header .tagline {
+        font-size: 1em;
+    }
+    .main-nav a {
+        margin: 0 8px;
+        font-size: 0.95em;
+        padding: 8px 10px;
+    }
+    #propuesta-resumen h2, #modulos-preview h2, .module-page-content h2, #referencias-landing h2, #referencias-propuesta h2 {
+        font-size: 1.8em;
+    }
+    #propuesta-resumen p {
+        font-size: 1em;
+    }
+    .module-card {
+        width: 100%; 
+        margin-bottom: 25px;
+    }
+    .module-card h3 {
+        font-size: 1.4em;
+    }
+    .module-page-content h3 {
+        font-size: 1.5em;
+    }
+    .quiz-container h4 {
+        font-size: 1.4em;
+    }
+    .nav-button {
+        padding: 10px 18px;
+        font-size: 0.95em;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 40px 15px;
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+    }
+    header h1 {
+        font-size: 1.8em;
+    }
+    .main-nav {
+        padding: 8px 0;
+    }
+    .main-nav a {
+        margin: 0 5px;
+        font-size: 0.85em;
+        padding: 6px 8px;
+    }
+    .cta-button {
+        padding: 12px 25px;
+        font-size: 1em;
+    }
+    .module-page-content, #propuesta-resumen, .module-card, .quiz-container {
+        padding: 20px;
+    }
+     #referencias-landing, #referencias-propuesta {
+        padding: 30px 15px;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+    }
+}

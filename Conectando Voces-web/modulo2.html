@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo 2: Comunicación Respetuosa - Conectando Voces</title>
+    <link rel="stylesheet" href="style.css"> <!-- Asegúrate de que style.css esté en la misma carpeta -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Conectando Voces</h1>
+            <p class="tagline">Módulo 2: Tips para una Comunicación Online Respetuosa (¡Incluye Trivia!)</p>
+        </div>
+    </header>
+
+     <nav class="main-nav">
+        <div class="container">
+            <a href="index.html">Inicio</a>
+            <a href="modulo1.html">Módulo 1</a>
+            <a href="modulo2.html" class="active">Módulo 2</a> <!-- Marcado como activo -->
+            <a href="modulo3.html">Módulo 3</a>
+            <a href="propuesta-completa.html">Propuesta Completa</a>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container module-page-content">
+            <h2>Herramientas para el Diálogo Constructivo</h2>
+            <p>Una comunicación digital efectiva y respetuosa se basa en la empatía, la escucha activa y la capacidad de análisis crítico. Este módulo te ofrece consejos prácticos y una trivia para reflexionar sobre estas habilidades.</p>
+
+            <h3>Infografía: 5 Tips Clave para una Comunicación Online Positiva</h3>
+            
+            <!-- INICIO DEL CÓDIGO DE INSERCIÓN DE PIKTOCHART -->
+            <div class="infographic-container" style="margin: 25px auto; text-align: center;">
+                <div class="piktowrapper-embed" data-uid="b73ce4ff90b1-consejos-online" style="width: 100%; max-width: 800px; margin: 0 auto;">
+                    <!-- Piktochart se cargará aquí -->
+                </div>
+                <script>(function(d){var js, id="pikto-embed-js", ref=d.getElementsByTagName("script")[0];if (d.getElementById(id)) { return;}js=d.createElement("script"); js.id=id; js.async=true;js.src="https://create.piktochart.com/assets/embedding/embed.js";ref.parentNode.insertBefore(js, ref);}(document));</script>
+            </div>
+            <!-- FIN DEL CÓDIGO DE INSERCIÓN DE PIKTOCHART -->
+            
+            <p style="text-align: center; font-size: 0.9em; color: #777; margin-top: 5px;">
+                Si la infografía no se carga, puedes intentar <a href="https://create.piktochart.com/output/b73ce4ff90b1-consejos-online" target="_blank" rel="noopener noreferrer">verla directamente en Piktochart</a>.
+            </p>
+
+
+            <h3>Trivia Intercultural Rápida</h3>
+            <div class="quiz-container">
+                <form id="interculturalQuiz">
+                    <div class="quiz-question">
+                        <p>1. Al iniciar una conversación online con alguien de un contexto cultural que desconoces, es recomendable:</p>
+                        <ul class="quiz-options">
+                            <li><label><input type="radio" name="q1" value="a"> a) Usar mucho humor y jergas locales para romper el hielo.</label></li>
+                            <li><label><input type="radio" name="q1" value="b"> b) Ser claro, respetuoso y abierto a aprender sobre sus formas de comunicación.</label></li>
+                            <li><label><input type="radio" name="q1" value="c"> c) Asumir que se comunicarán igual que tú.</label></li>
+                            <li><label><input type="radio" name="q1" value="d"> d) Hablar principalmente de tus propias experiencias.</label></li>
+                        </ul>
+                        <p class="quiz-feedback" id="feedback-q1"></p>
+                    </div>
+
+                    <div class="quiz-question">
+                        <p>2. Si encuentras un comentario en línea que promueve un estereotipo negativo sobre un grupo cultural, la acción más constructiva podría ser:</p>
+                        <ul class="quiz-options">
+                            <li><label><input type="radio" name="q2" value="a"> a) Ignorarlo completamente.</label></li>
+                            <li><label><input type="radio" name="q2" value="b"> b) Responder con insultos para desacreditar a la persona.</label></li>
+                            <li><label><input type="radio" name="q2" value="c"> c) Reportar el comentario si viola las normas de la plataforma y, opcionalmente, ofrecer una perspectiva respetuosa y basada en hechos.</label></li>
+                            <li><label><input type="radio" name="q2" value="d"> d) Compartir el comentario para mostrar lo equivocada que está la gente.</label></li>
+                        </ul>
+                        <p class="quiz-feedback" id="feedback-q2"></p>
+                    </div>
+                     <div class="quiz-question">
+                        <p>3. La "hiperculturalidad" (concepto explorado por Han) en el entorno digital puede llevar a:</p>
+                        <ul class="quiz-options">
+                            <li><label><input type="radio" name="q3" value="a"> a) Una comprensión siempre más profunda y matizada de todas las culturas.</label></li>
+                            <li><label><input type="radio" name="q3" value="b"> b) Una menor exposición a la diversidad cultural debido a los algoritmos.</label></li>
+                            <li><label><input type="radio" name="q3" value="c"> c) Una sobreexposición a estímulos culturales diversos que puede generar superficialidad o fatiga, si no se gestiona con conciencia.</label></li>
+                            <li><label><input type="radio" name="q3" value="d"> d) La desaparición total de las culturas locales.</label></li>
+                        </ul>
+                        <p class="quiz-feedback" id="feedback-q3"></p>
+                    </div>
+                    <button type="button" class="submit-quiz-btn" onclick="checkQuiz()">Verificar Respuestas</button>
+                </form>
+                 <div id="quiz-results" style="margin-top:20px; font-weight:bold;"></div>
+            </div>
+             <div class="module-navigation">
+                <a href="modulo1.html" class="nav-button prev">&larr; Ir al Módulo 1</a>
+                <a href="modulo3.html" class="nav-button next">Ir al Módulo 3 &rarr;</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Conectando Voces. Proyecto del curso de Interculturalidad.</p>
+        </div>
+    </footer>
+
+    <script>
+        function checkQuiz() {
+            const answers = {
+                q1: 'b',
+                q2: 'c',
+                q3: 'c'
+            };
+            let score = 0;
+            const totalQuestions = Object.keys(answers).length;
+
+            for (const question in answers) {
+                const selectedOption = document.querySelector(`input[name="${question}"]:checked`);
+                const feedbackEl = document.getElementById(`feedback-${question}`);
+                
+                if (selectedOption) {
+                    if (selectedOption.value === answers[question]) {
+                        feedbackEl.textContent = "¡Correcto!";
+                        feedbackEl.style.color = "#27ae60"; // Verde
+                        score++;
+                    } else {
+                        feedbackEl.textContent = `Incorrecto. La respuesta correcta era la opción ${answers[question].toUpperCase()}.`;
+                        feedbackEl.style.color = "#e74c3c"; // Rojo
+                    }
+                } else {
+                    feedbackEl.textContent = "Por favor, selecciona una opción.";
+                    feedbackEl.style.color = "#f39c12"; // Naranja
+                }
+            }
+            
+            const resultsEl = document.getElementById('quiz-results');
+            resultsEl.textContent = `Tu puntaje: ${score} de ${totalQuestions}.`;
+            if (score === totalQuestions) {
+                resultsEl.textContent += " ¡Excelente trabajo!";
+                resultsEl.style.color = "#27ae60";
+            } else if (score > 0) {
+                 resultsEl.style.color = "#3498db";
+            }
+            else {
+                resultsEl.style.color = "#e74c3c";
+            }
+        }
+    </script>
+</body>
+</html>
